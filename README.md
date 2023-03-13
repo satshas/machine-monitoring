@@ -25,7 +25,7 @@ The three machines data are saved into two csv files:
 2. To run BCNC: machine must run GBRL.
 3. To run Printrun: machine must run Marlin.
 
-# 1. Install the Mosquitto Server
+## Install the Mosquitto Server
 Prerequisites:
 1. An Ubuntu 20.04 server.
 2. A non-root user with sudo rights.
