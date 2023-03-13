@@ -1,8 +1,8 @@
-# machine-monitoring
+# Machine-Monitoring
 An Open Source Software to monitor three machines in Pop-up Factory: 
 1. Laser Cutter: [OLSK-Small-Laser](https://github.com/Open-Lab-Starter-Kit/OLSK-Small-Laser)
-3. CNC Router: [OLSK-Small-CNC]([http://example.com](https://github.com/Open-Lab-Starter-Kit/OLSK-Small-CNC))
-4. 3D Printer: [OLSK-Small-3D-Printer]([http://example.com](https://github.com/Open-Lab-Starter-Kit/OLSK-Small-3D-Printer))
+3. CNC Router: [OLSK-Small-CNC](https://github.com/Open-Lab-Starter-Kit/OLSK-Small-CNC)
+4. 3D Printer: [OLSK-Small-3D-Printer](https://github.com/Open-Lab-Starter-Kit/OLSK-Small-3D-Printer)
 
 Machine Monitoring provides: 
 1. States of machines: eg. Idle, Pause, Run or Job Done,
@@ -17,4 +17,39 @@ The three machines data are saved into two csv files:
 2. The details of the Job ID, path of the gcode, start time and end time.
 
 ![Screen Shot 2023-03-13 at 12 52 50](https://user-images.githubusercontent.com/27281789/224694394-71e27d97-3190-4532-841b-41424c293412.png)
+
+# How to run the machine monitoring?
+
+## Requirement
+1. MQTT Broker server
+2. To run BCNC: machine must run GBRL.
+3. To run Printrun: machine must run Marlin.
+
+# 1. Install the Mosquitto Server
+Prerequisites:
+1. An Ubuntu 20.04 server.
+2. A non-root user with sudo rights.
+
+https://mosquitto.org/
+
+## How to run Machine Monitoring?
+1. Update the broker_address variable into your broker hostname or ip address.
+
+- Machine Monitoring Program
+<code>broker_address= "pi-mqtt-server" #Update broker address</code>
+
+- BCNC
+Folder path: bCNC/sender.py
+<code>self.broker_address= 'pi-mqtt-server'#"broker.emqx.io" #Update broker address/code>
+
+- Printrun
+Folder path: printrun/printcore.py and printrun/pronterface.py
+<code>self.broker_address = "pi-mqtt-server"</code>
+
+2. Run The programs
+  <code>cd bCNC-cnc
+  python bCNC.py</code>
+  
+  <code>cd Printrun-master
+  python pronterface.py</code>
 
