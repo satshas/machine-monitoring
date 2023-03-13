@@ -39,17 +39,17 @@ https://mosquitto.org/
 <code>broker_address= "pi-mqtt-server" #Update broker address</code>
 
 - BCNC
-Folder path: bCNC/sender.py
-<code>self.broker_address= 'pi-mqtt-server'#"broker.emqx.io" #Update broker address/code>
+Folder path: <code>bCNC/sender.py</code>
+<code>self.broker_address= 'pi-mqtt-server'#"broker.emqx.io" #Update broker address</code>
 
 - Printrun
-Folder path: printrun/printcore.py and printrun/pronterface.py
+Folder path: <code>printrun/printcore.py and printrun/pronterface.py</code>
 <code>self.broker_address = "pi-mqtt-server"</code>
 
 2. Run The programs
-  <code>cd bCNC-cnc
+  <code>cd bCNC-cnc</code>
   python bCNC.py</code>
   
-  <code>cd Printrun-master
+  <code>cd Printrun-master</code>
   python pronterface.py</code>
 
