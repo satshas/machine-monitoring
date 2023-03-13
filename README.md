@@ -46,10 +46,11 @@ Folder path: <code>bCNC/sender.py</code>
 Folder path: <code>printrun/printcore.py and printrun/pronterface.py</code>
 <code>self.broker_address = "pi-mqtt-server"</code>
 
-2. Run The programs
+2. Run The programs.
+
   <code>cd bCNC-cnc</code>
-  python bCNC.py</code>
+  <code>python bCNC.py</code>
   
   <code>cd Printrun-master</code>
-  python pronterface.py</code>
+  <code>python pronterface.py</code>
 
