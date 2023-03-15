@@ -57,13 +57,13 @@ Folder path: <code>printrun/printcore.py and printrun/pronterface.py</code>
   Author
 --
 
-The machine-monitoring software has been developed by **[InMachines Ingrassia GmbH](https://www.inmachines.net/)**.
+The machine-monitoring software has been developed at **[InMachines Ingrassia GmbH](https://www.inmachines.net/)**.
 
 <img src="https://irp.cdn-website.com/2b5ccdcd/dms3rep/multi/InMachines_Logo_positive_white.png" width="50%">
 
 <br>
 
-Development by:
+Development and programming by:
 - **[Marcello Tania](https://marcellotania.com/)**
 
 Contact
