@@ -53,4 +53,35 @@ Folder path: <code>printrun/printcore.py and printrun/pronterface.py</code>
   
   <code>cd Printrun-master</code>
   <code>python pronterface.py</code>
+  
+  Author
+--
+
+The machine-monitoring software has been developed by **[InMachines Ingrassia GmbH](https://www.inmachines.net/)**.
+
+<img src="https://irp.cdn-website.com/2b5ccdcd/dms3rep/multi/InMachines_Logo_positive_white.png" width="50%">
+
+<br>
+
+Development by:
+- **[Marcello Tania](https://marcellotania.com/)**
+
+Contact
+--
+
+- daniele@inmachines.net
+- [https://www.inmachines.net/](https://www.inmachines.net/)
+
+
+License
+--
+
+The machine-monitoring is released under the following open source license:
+
+- GNU Affero General Public License - **[AGPL](https://www.gnu.org/licenses/agpl-3.0.en.html)**
+
+The machine-monitoring documentation, pictures and presentation text of this repository are released under the following license:
+
+- Creative-Commons-Attribution-ShareAlike 4.0 International - **[CC BY-SA 4.0](LICENSE_CC_BY_SA_4.0.txt)**
+
 
