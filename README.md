@@ -82,6 +82,6 @@ The machine-monitoring is released under the following open source license:
 
 The machine-monitoring documentation, pictures and presentation text of this repository are released under the following license:
 
-- Creative-Commons-Attribution-ShareAlike 4.0 International - **[CC BY-SA 4.0]([LICENSE_CC_BY_SA_4.0.txt](https://creativecommons.org/licenses/by-sa/4.0/))**
+- Creative-Commons-Attribution-ShareAlike 4.0 International - **[CC BY-SA 4.0](LICENSE_CC_BY_SA_4.0.txt](https://creativecommons.org/licenses/by-sa/4.0/)**
 
 
