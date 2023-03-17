@@ -25,6 +25,10 @@ The three machines data are saved into two csv files:
 2. To run BCNC: machine must run GBRL.
 3. To run Printrun: machine must run Marlin.
 
+# MQTT Protocol Diagram
+![Screen Shot 2023-03-17 at 10 29 30](https://user-images.githubusercontent.com/27281789/225866338-64449381-4894-44d8-86cf-574143d9ccc9.png)
+
+
 ## Install the Mosquitto Server
 Prerequisites:
 1. An Ubuntu 20.04 server.
