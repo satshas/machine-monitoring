@@ -19,6 +19,7 @@ The three machines data are saved into two csv files:
 ![Screen Shot 2023-03-13 at 12 52 50](https://user-images.githubusercontent.com/27281789/224694394-71e27d97-3190-4532-841b-41424c293412.png)
 
 # How to run the machine monitoring?
+![Screen Shot 2023-03-17 at 10 32 37](https://user-images.githubusercontent.com/27281789/225866924-373d7fd3-f69f-43ab-9535-a008c2f3f30f.png)
 
 ## Requirement
 1. MQTT Broker server
@@ -26,7 +27,6 @@ The three machines data are saved into two csv files:
 3. To run Printrun: machine must run Marlin.
 
 # MQTT Protocol Diagram
-![Screen Shot 2023-03-17 at 10 29 30](https://user-images.githubusercontent.com/27281789/225866338-64449381-4894-44d8-86cf-574143d9ccc9.png)
 
 
 ## Install the Mosquitto Server
