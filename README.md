@@ -69,27 +69,27 @@ Folder path: <code>bCNC/sender.py</code>
 [Link](https://github.com/satshas/machine-monitoring/blob/main/bCNC-cnc/bCNC/Sender.py)
 
 1. States of machines: eg. Idle, Pause, Run or Job Done,
-"""
+```
 #Send MQTT state
 self.client.publish("inmachines/cnc/state",CNC.vars["state"], qos=1)
-"""
+```
 3. Power consumation of machine in Watt,
 5. File name of the laoded gcode,
-"""
+```
 #Send MQTT file name
 self.client.publish("inmachines/cnc/filename",filename, qos=1)
-"""
+```
 7. Start Time: when the job is started,
-"""
+```
 #Send MQTT run start time
 self.client.publish("inmachines/cnc/starttime",str(datetime.now()), qos=1)
-"""
+```
 9. End Time: when the job is done,
-"""
+```
 #Send MQTT run end time
 self.client.publish("inmachines/cnc/state",'Job Done', qos=1)
 self.client.publish("inmachines/cnc/endtime",str(datetime.now()), qos=1)
-"""
+```
   
   Author
 --
