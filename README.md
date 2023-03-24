@@ -90,7 +90,48 @@ self.client.publish("inmachines/cnc/starttime",str(datetime.now()), qos=1)
 self.client.publish("inmachines/cnc/state",'Job Done', qos=1)
 self.client.publish("inmachines/cnc/endtime",str(datetime.now()), qos=1)
 ```
-  
+
+## Printrun
+Folder path: <code>printrun/printcore.py</code>
+[Link](https://github.com/satshas/machine-monitoring/blob/main/Printrun-master/printrun/printcore.py)
+
+1. States of machines: eg. Idle, Pause, Run or Job Done,
+```
+self.client.publish("inmachines/3dprinter/state","disconnected", qos=1)
+```
+```
+self.client.publish("inmachines/3dprinter/state","connected", qos=1)
+```
+```
+self.client.publish("inmachines/3dprinter/state","Printing", qos=1)
+```
+```
+self.client.publish("inmachines/3dprinter/state","pause", qos=1)
+```
+```
+self.client.publish("inmachines/3dprinter/state","resume", qos=1)
+```
+```
+self.client.publish("inmachines/3dprinter/state","Printing done", qos=1)
+```
+3. Power consumation of machine in Watt,
+5. File name of the laoded gcode,
+Folder path: <code>printrun/pronterface.py</code>
+[Link](https://github.com/satshas/machine-monitoring/blob/main/Printrun-master/printrun/pronterface.py)
+```
+# Publish MQTT
+self.client.publish("inmachines/3dprinter/filename",filename, qos=1)
+```
+7. Start Time: when the job is started,
+```
+self.client.publish("inmachines/3dprinter/starttime",str(datetime.now()), qos=1)
+```
+9. End Time: when the job is done,
+```
+self.client.publish("inmachines/3dprinter/endtime",str(datetime.now()), qos=1)
+```
+
+
   Author
 --
 
